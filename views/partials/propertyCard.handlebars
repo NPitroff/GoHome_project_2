@@ -1,0 +1,31 @@
+{{!-- <article class="property">
+  <div class="history">
+{{!-- commented out {{ address}} line 4 after the <a></a> tags
+    <a href="/api/rentsearch/{{id}}"> </a>
+
+  </div>
+
+  <div class="homes">
+    <h1 id="rentHist">Search History</h1>
+    <p>{{ address }}</p>
+    <p>{{ bedrooms }}</p>
+    <p>{{ bathrooms }}</p>
+    <p>{{ propertyType }}</p>
+    <p>{{ squareFootage }}</p>
+  </div>
+
+</article> --}}
+
+<section class="card">
+  <!--  -->
+  <a href="/rentsearch/{{id}}">
+    <!--  -->
+    <header>Search History</header>
+    <!-- list of table params for the searched address -->
+    <p>{{address}}</p>
+    <p>{{bedrooms}}</p>
+    <p>{{bathrooms}}</p>
+    <p>{{property_type}}</p>
+    <p>{{square_footage}}</p>
+  </a>
+</section>

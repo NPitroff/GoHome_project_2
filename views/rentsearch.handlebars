@@ -1,0 +1,124 @@
+<h1>Search Here for your new Home!</h1>
+<form class='rental-form'>
+    {{!-- <input id="cityName" type="text" placeholder="ENTER CITY NAME"> --}}
+    <label for="address">Address: </label>
+    <input id="address" type="text" placeholder="ex, 123 Main St, City, State">
+    <label for="beds">Beds: </label>
+    <input id="beds" type="number" placeholder="BED" min="1" max="10">
+    <label for="baths">Baths: </label>
+    <input id="baths" type="number" placeholder="BATH" min="1" max="10">
+    <label for="propType">Property Type: </label>
+    <input id="propType" type="text" placeholder="PROPERTY TYPE">
+    <label for="sqft">Square Footage: </label>
+    <input id="sqft" type="number" placeholder="SQUARE FOOTAGE">
+    {{!-- <label for="comps">How many comparisons? </label>
+    <select id="comps" name="compare">
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+    </select> --}}
+    <button type="button" id="homeSearch">Search</button>
+
+</form>
+
+<hr>
+<h2>Apartment And Houses for Rent!</h2>
+<div id="rental-display">
+    {{!-- div for first property --}}
+    <div class="rental">
+        <h1 id="listRent">Rent Price Ranges</h1>
+        <p id="rentRangeHigh"></p>
+        <p id="rentRangeLow"></p>
+        <hr>
+        <p id="address"></p>
+        <p id="price"></p>
+        <p id="nmbr-beds"></p>
+        <p id="nmbr-baths"></p>
+        <p id="prop-type"></p>
+        <p id="sqft-property"></p>
+
+    </div>
+    {{!-- div for second property --}}
+    <div class="rental">
+    
+        <p id="address1"></p>
+        <p id="price1"></p>
+        <p id="nmbr-beds1"></p>
+        <p id="nmbr-baths1"></p>
+        <p id="prop-type1"></p>
+        <p id="sqft-property1"></p>
+
+    </div>
+    {{!-- div for third property --}}
+    <div class="rental">
+    
+        <p id="address2"></p>
+        <p id="price2"></p>
+        <p id="nmbr-beds2"></p>
+        <p id="nmbr-baths2"></p>
+        <p id="prop-type2"></p>
+        <p id="sqft-property2"></p>
+
+    </div>
+    {{!-- div for fourth property --}}
+    <div class="rental">
+    
+        <p id="address3"></p>
+        <p id="price3"></p>
+        <p id="nmbr-beds3"></p>
+        <p id="nmbr-baths3"></p>
+        <p id="prop-type3"></p>
+        <p id="sqft-property3"></p>
+
+    </div>
+    {{!-- div for fifth property --}}
+    <div class="rental">
+    
+        <p id="address4"></p>
+        <p id="price4"></p>
+        <p id="nmbr-beds4"></p>
+        <p id="nmbr-baths4"></p>
+        <p id="prop-type4"></p>
+        <p id="sqft-property4"></p>
+
+    </div>
+    {{!-- div for sixth property --}}
+    <div class="rental">
+    
+        <p id="address5"></p>
+        <p id="price5"></p>
+        <p id="nmbr-beds5"></p>
+        <p id="nmbr-baths5"></p>
+        <p id="prop-type5"></p>
+        <p id="sqft-property5"></p>
+
+    </div>
+</div>
+
+{{!-- Display rental search history --}}
+{{#if dbPropertyData}}
+<section class="rent-hist">
+    <h1>Rent Search Histroy</h1>
+    {{#each dbPropertyData }}
+    <p id="prop-search-number">Property: {{id}}</p>
+    <p>{{address}}</p>
+    <p>{{property_type}}</p>
+  
+  <div class="rent-details">
+    <p>{{bedrooms}}</p>
+    <p>{{bathrooms}}</p>
+    <p>{{square_footage}}</p>
+    
+  </div>
+  {{/each}}
+</section>
+{{/if}}
+
+
+<script src="/js/searchRental.js"></script>
+{{!-- <script src="/js/weatherForecast.js"></script> --}}

@@ -1,0 +1,73 @@
+.inputContainer {
+    padding-left: 400px;
+    padding-right: 400px;
+    padding-top: 50px;
+}
+
+#startButtons {
+    padding-left: 1000px;
+    padding-top: 50px;
+    padding-right:50px;
+    padding-bottom: 50px;
+}
+
+#Motto {
+    padding-top: 50px;
+    padding-left: 30px;
+    padding-bottom: 50px;
+    font-size: 40px;
+}
+
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+
+.signupbtn {
+    padding: 14px 20px;
+    background-color:green;
+}
+
+#ContactForm {
+    padding-top: 50px;
+    padding-right: 400px;
+    padding-left: 400px;
+}
+
+.rent-hist{
+    
+        color: white;
+        background-color: rgb(59, 59, 83);
+        width: 20em;
+        height: auto;
+    
+}
+
+.rent-hist p{
+background-color: rgb(171, 169, 179);
+height: 5em;
+}
+
+#rental-display{
+    
+        background-color: rgba(72, 88, 72, 0.685);
+        color: white;
+        width: 20em;
+        height:auto;
+    
+}
+
+.rental p{
+    background-color: rgb(8, 49, 49);
+    text-shadow: 0.05em 0.05em black;
+    height: auto;
+}
+
+#main-page-background{
+    background-color: rgba(11, 39, 223, 0.507);
+}
+
+#prop-search-number{
+    background-color: rgba(182, 54, 241, 0.616);
+    height:4em;
+}
