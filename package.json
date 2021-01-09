@@ -13,7 +13,7 @@
     "url": "git+https://github.com/ralph626/Project-2.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Nicolai",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ralph626/Project-2/issues"
@@ -40,3 +40,4 @@
     "nodemon": "^2.0.6"
   }
 }
+
