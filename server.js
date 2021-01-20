@@ -3,9 +3,14 @@ const express = require('express');
 const session = require('express-session');
 const exphbs = require('express-handlebars');
 
+const compression = require('compression');
+ 
+// compress all responses
+app.use(compression());
+
 const app = express();
 const PORT = process.env.PORT || 3001;
-
+app.use(compression());
 const sequelize = require("./config/connection");
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
