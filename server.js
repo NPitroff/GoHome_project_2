@@ -6,7 +6,7 @@ const exphbs = require('express-handlebars');
 const compression = require('compression');
  
 // compress all responses
-app.use(compression());
+// app.use(compression());
 
 const app = express();
 const PORT = process.env.PORT || 3001;
