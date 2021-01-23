@@ -48,3 +48,8 @@ These searches are saved in the database, along with the user information.
 
 
 Thank you for viewing and we hope you enjoy the app!
+
+## Contact
+Nicolai Pitroff
+nicolai.pitroff@gmail.com
+-created all the routes and server connections
